@@ -1,0 +1,63 @@
+:root {
+    --fundo-app: #2E2E37;
+    --primary-color: #00BBC9;
+    --cor-branca: #FFFFFF;
+    --cor-preto: #000;
+    --border-radius: 20px;
+}
+
+body {
+    background-color: var(--fundo-app);
+    display: flex;
+    justify-content: center;
+    align-items: center; /*vertical*/
+    height: 100vh;
+
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+    color: var(--cor-branca);
+
+    overflow: hidden; /*desabilita o scroll*/
+
+}
+
+
+.principal {
+    background-color: var(--primary-color);
+    width: 500px;
+    height: 500px;
+    border-radius: var(--border-radius);
+    text-align: center;
+}
+
+.inputs {
+    background-color: var(--cor-branca);
+    border-radius: var(--border-radius);
+    margin: auto;
+    display: flex;
+    width: 350px;
+    padding: 5px;
+    margin-bottom: 50px;
+}
+
+#city-input {
+    border: none;
+    flex-grow: 1;
+    background-color: rgba(255, 247, 247, 0);
+}
+
+#city-input:focus {
+    outline: none;
+}
+
+#search-button {
+    border: none;
+    border-radius: var(--border-radius);
+    background-color: rgba(255, 247, 247, 0);
+}
+
+#search-button:hover {
+    color: var(--primary-color);
+}
